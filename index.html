@@ -819,7 +819,7 @@ function applyRemovals() {
   pathsToDelete.forEach(p => deletePath(working, p));
 
   outputJSON = working;
-  const outputStr = JSON.stringify(outputJSON, null, 2);
+  const outputStr = JSON.stringify(outputJSON);
   document.getElementById('jsonOutput').value = outputStr;
   document.getElementById('outputSection').style.display = '';
 
